@@ -38,18 +38,7 @@ The application is built with a backend using **Node.js**, **Express**, and a **
 - npm or yarn
 
 ### Backend Setup
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd restaurant-board
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Set up the database:
+Set up the database:
    - Create a MySQL database named `restaurant_board`.
    - Run the following SQL script to create the necessary tables:
      ```sql
@@ -72,38 +61,6 @@ The application is built with a backend using **Node.js**, **Express**, and a **
          FOREIGN KEY (user_id) REFERENCES users(id)
      );
      ```
-
-4. Configure the database connection:
-   - Create a `.env` file in the root directory:
-     ```
-     DB_HOST=localhost
-     DB_USER=<your-database-username>
-     DB_PASSWORD=<your-database-password>
-     DB_NAME=restaurant_board
-     ```
-
-5. Start the server:
-   ```bash
-   npm start
-   ```
-
-### Front-End Setup
-1. Navigate to the front-end directory (if separate):
-   ```bash
-   cd client
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm start
-   ```
-
-4. Open the application in your browser at `http://localhost:3000`.
 
 ---
 
@@ -146,7 +103,7 @@ The application is built with a backend using **Node.js**, **Express**, and a **
 
 ### Get Ratings for a Restaurant
 - **Method**: GET
-- **Endpoint**: `/ratings?restaurant_name=<name>`
+- **Endpoint**: `/products`
 
 ---
 
@@ -154,7 +111,7 @@ The application is built with a backend using **Node.js**, **Express**, and a **
 ```
 restaurant-board/
 ├── server/             # Backend application
-│   ├── app.js          # Main application file
+│   ├── index.js          # Main application file
 │   ├── routes/         # API routes
 │   └── models/         # Database models
 ├── client/             # Frontend application
