@@ -28,6 +28,7 @@ The application is built with a backend using **Node.js**, **Express**, and a **
 
 ## Preview
 
+![Alt Text](./foodie.png)
 ---
 ## Installation and Setup
 
